@@ -28,7 +28,7 @@ int  main(int  argc, char *argv[])
      
      if (argc != 3) {
           
-          printf("Start Balance: %s $0 \n", argv[1]);
+          printf("Start Balance: $0 \n", argv[1]);
          
           
      }
@@ -47,8 +47,8 @@ int  main(int  argc, char *argv[])
      }
      printf("Server has attached the shared memory...\n");
      
-     ShmPTR[0] = atoi(argv[1]);
-     ShmPTR[1] = atoi(argv[2]);
+     ShmPTR[0] = 0;
+     ShmPTR[1] = 0;
      
      printf("Server has filled %d %d in shared memory...\n",
             ShmPTR[0], ShmPTR[1]);
